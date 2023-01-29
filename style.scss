@@ -1,0 +1,71 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    //transition: 3s;
+    transition-duration: 3s;
+    //transition-delay: 3s;
+    //transition-timing-function: linear;
+    transition-timing-function: cubic-bezier(0.075, 0.075, 0.075, 0.075);
+    &:hover{
+        background-color: green;
+        transform: translateX(500px);
+    }
+
+    animation: test-animation;
+        animation-duration: 3s;
+}
+
+
+body {
+    animation: test-bg 5s infinite;
+    // animation-duration: 2s;
+    // animation-iteration-count: 3;
+    // border: 1px solid black;
+    // border-color: red;
+    // border-width: 2px;
+    // border-style: solid;
+}
+
+@keyframes test-bg {
+    0% {
+        background-image: url(./logo.jpg);
+    }
+    50% {
+        background-image: url(./orel.jpg);
+    }
+    65% {
+        background-image: url(./pitak.jpg);
+    }
+    70% {
+        background-image: url(./system-programming.jpg);
+    }
+}
+
+// @keyframes test-animation{
+//     from {
+//         background-color: red;
+//     }
+//     to {
+//         background-color: blue;
+//     }
+// }
+
+// @keyframes test-animation {
+//         0% {
+//             background-color: red;
+//             transform: translate(300px, 0px);
+//         }
+//         50% {
+//             background-color: blue;
+//             transform: translate(300px, 300px);
+//         }
+//         65% {
+//             background-color: black;
+//             transform: translate(0px, 300px);
+//         }
+//         70% {
+//             background-color: green;
+//             transform: translate(0px, 0px);
+//         }
+//     }

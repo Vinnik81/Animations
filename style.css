@@ -1,0 +1,50 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+  transition-duration: 3s;
+  transition-timing-function: cubic-bezier(0.075, 0.075, 0.075, 0.075);
+  -webkit-animation: test-animation;
+          animation: test-animation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+.box:hover {
+  background-color: green;
+  transform: translateX(500px);
+}
+
+body {
+  -webkit-animation: test-bg 5s infinite;
+          animation: test-bg 5s infinite;
+}
+
+@-webkit-keyframes test-bg {
+  0% {
+    background-image: url(./logo.jpg);
+  }
+  50% {
+    background-image: url(./orel.jpg);
+  }
+  65% {
+    background-image: url(./pitak.jpg);
+  }
+  70% {
+    background-image: url(./system-programming.jpg);
+  }
+}
+
+@keyframes test-bg {
+  0% {
+    background-image: url(./logo.jpg);
+  }
+  50% {
+    background-image: url(./orel.jpg);
+  }
+  65% {
+    background-image: url(./pitak.jpg);
+  }
+  70% {
+    background-image: url(./system-programming.jpg);
+  }
+}/*# sourceMappingURL=style.css.map */
